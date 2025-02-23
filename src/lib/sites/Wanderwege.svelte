@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Brülisau from '$lib/images/BrülisauHoherKastenAlpRohr.png';
+	import Brülisau from '$lib/images/BruelisauHoherKastenAlpRohr.png';
 	import BrülisauAlpRohr from '$lib/images/BruelisauAlpRohr.png';
-	import Saxerlücke from '$lib/images/BrülisauSämtiserseeFälenseeSaxerlückeAlpRohr.png';
+	import Saxerlücke from '$lib/images/BruelisauSaemtiserseeFaelenseeSaxerlueckeAlpRohr.png';
 	import Tagestour from '$lib/images/Tagestour.png';
 	import SennwaldBrülisau from '$lib/images/SennwaldBruelisau.png';
 	import SennwaldAlpRohr from '$lib/images/SennwaldAlpRohr.png';
