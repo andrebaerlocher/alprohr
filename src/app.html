@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<style>
+			.raleway {
+				font-family:
+					'raleway',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif; !important;
+					font-weight: 500;
+			}
+
+			.archivo {
+			    font-family:
+			                 'Archivo',
+			                 system-ui,
+			                 -apple-system,
+			                 BlinkMacSystemFont,
+			                 'Segoe UI',
+			                 Roboto,
+			                 Oxygen,
+			                 Ubuntu,
+			                 Cantarell,
+			                 'Open Sans',
+			                 'Helvetica Neue',
+			                 sans-serif; !important;
+			}
+
+			:root {
+				font-family:
+					'raleway',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif;
+				padding: 0px;
+				margin: 0px;
+				font-size: 20px;
+				font-weight: 500;
+				width: 100dvw;
+				box-sizing: border-box;
+				line-height: 140%;
+				color: black;
+			}
+
+			body {
+				padding: 0px;
+				margin: 0px;
+				width: 100dvw;
+				box-sizing: border-box;
+				overflow-x: clip;
+			}
+
+			h2 {
+			line-height: 1.44;
+			font-size: clamp(1.5rem, 3dvw, 5rem);
+			}
+
+			h1 {
+				font-family:
+					'Archivo',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif;
+				font-weight: 600;
+				font-size: clamp(3rem, 6vw, 90px);
+				line-height: 1.2;
+			}
+
+			h3 {
+			font-size: clamp(1rem, 2.35vw, 32px);
+			}
+
+			.famid {
+				font-family:
+					'Archivo',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif;
+				size: 1.5rem;
+			}
+
+			.famin {
+				font-family:
+					'Archivo',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif;
+				font-size: 1.4rem;
+			}
+
+			.fheader {
+				font-size: 24px;
+				font-family:
+					'Archivo',
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					'Open Sans',
+					'Helvetica Neue',
+					sans-serif;
+			}
+
+			.full {
+				grid-column: 1/-1;
+			}
+
+			.g10 {
+				grid-column: 2 / 12;
+				display: grid;
+				grid-template-columns: repeat(10, 1fr);
+				column-gap: 24px;
+			}
+
+			.g10m {
+				grid-column: 2 / 12;
+			}
+
+			.g3 {
+				grid-column: span 3;
+			}
+
+			.g4 {
+				grid-column: span 4;
+			}
+
+			.g5 {
+				grid-column: span 5;
+			}
+
+			.g6 {
+				grid-column: span 6;
+			}
+
+			.links4 {
+				grid-column: 1 / span 4;
+			}
+
+			.links5 {
+				grid-column: 1 / span 5;
+			}
+
+			.rechts4 {
+				grid-column: 7 / span 4;
+			}
+
+			.rechts5 {
+				grid-column: 6 / span 5;
+			}
+
+			.wide {
+				width: 100dvw;
+				grid-column: 1/-1;
+				margin-left: -60px;
+			}
+
+			.after-xs {
+			margin-bottom: 0.125rem;
+			}
+
+			.after-sm {
+			    margin-bottom: 0.25rem;
+			      }
+
+			         .after-md {
+			         margin-bottom: 0.5rem;
+			         }
+
+			         .after-lg {
+			         margin-bottom: 1rem;
+			         }
+
+			         .after-xl {
+			         margin-bottom: 2rem;
+			         }
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
