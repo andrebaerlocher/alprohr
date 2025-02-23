@@ -149,16 +149,6 @@
 		height: 50dvh;
 	}
 
-	.ex {
-		position: sticky;
-		top: 0;
-		z-index: 100;
-	}
-
-	.bar {
-		border: 1px solid grey;
-	}
-
 	.noclip {
 		overflow: visible;
 	}
