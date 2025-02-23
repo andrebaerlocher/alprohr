@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div class="g10 bento">
 	<img style:grid-area="b1" src="/images/BOOben.jpg" alt="Bild" />
 	<img style:grid-area="b2" src="/images/BO3.jpeg" alt="Bild" />
