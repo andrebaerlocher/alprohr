@@ -5,7 +5,7 @@
 <div
 	id="header"
 	class="archivo"
-	style:background-image="linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),url('images/HeaderBG.jpg')"
+	style:background-image="linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url('images/HeaderBG.jpg')"
 >
 	<a class="fheader borright" href="/">Startseite</a>
 	<a class="fheader" href="/kulinarisches">Kulinarisches</a>

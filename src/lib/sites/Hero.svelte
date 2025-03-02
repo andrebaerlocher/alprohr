@@ -12,7 +12,7 @@
 		</div>
 		<div id="rechts">
 			<div id="rechtsoben">Öffnungszeiten: Mai - Oktober</div>
-			<div id="rechtsunten">Montag Ruhetag</div>
+			<div id="rechtsunten">Dienstag Ruhetag</div>
 		</div>
 	</div>
 	<Header />

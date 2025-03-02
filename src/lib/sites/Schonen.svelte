@@ -29,7 +29,7 @@
 		padding-top: 1rem;
 		grid-area: t;
 		display: grid;
-		align-self: center;
+		align-self: start;
 		hyphens: auto;
 
 		font-size: clamp(1rem, 1.95dvw, 3rem);

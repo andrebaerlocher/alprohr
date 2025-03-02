@@ -27,8 +27,8 @@
 		display: grid;
 		gap: 24px;
 		grid-template-rows:
-			calc((100dvh - 120px) * 0.269) calc((100dvh - 120px) * 0.214) calc((100dvh - 120px) * 0.477)
-			calc((100dvh - 120px) * 0.191);
+			calc((100% - 120px) * 0.269) calc((100% - 120px) * 0.214) calc((100% - 120px) * 0.477)
+			calc((100% - 120px) * 0.191);
 		box-sizing: border-box;
 		padding-top: 60px;
 		padding-bottom: 60px;

@@ -135,6 +135,9 @@
 	h2 {
 		grid-column: span 5;
 		position: relative;
+		padding-bottom: 24px;
+		box-sizing: border-box;
+		margin-bottom: -8px;
 	}
 
 	.bild.li {

@@ -10,7 +10,7 @@
 
 <style>
 	#uebernachten {
-		height: 50dvh;
+		min-height: 50dvh;
 		display: grid;
 		justify-items: center;
 		grid-template-rows: 25dvh auto auto 1fr;
@@ -19,7 +19,6 @@
 
 	h1 {
 		align-self: end;
-
 		font-size: clamp(3rem, 6vw, 90px);
 	}
 

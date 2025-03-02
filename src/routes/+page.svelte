@@ -136,17 +136,16 @@
 		padding-left: 60px;
 		padding-right: 60px;
 		box-sizing: border-box;
-		overflow: clip;
 		background-size: cover;
 		background-position: center;
 	}
 
 	.fullh {
-		height: 100dvh;
+		min-height: 100dvh;
 	}
 
 	.half {
-		height: 50dvh;
+		min-height: 50dvh;
 	}
 
 	.noclip {

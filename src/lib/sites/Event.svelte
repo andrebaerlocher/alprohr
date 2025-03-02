@@ -18,7 +18,7 @@
 
 <style>
 	#event {
-		height: 100dvh;
+		min-height: 100dvh;
 		grid-template-rows: auto auto auto 1fr;
 		align-content: center;
 	}

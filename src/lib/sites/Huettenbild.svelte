@@ -9,7 +9,7 @@
 
 <style>
 	#huettenbild {
-		height: 50dvh;
+		min-height: 50dvh;
 		color: black;
 		display: grid;
 		grid-template-rows: 35dvh auto 1fr;

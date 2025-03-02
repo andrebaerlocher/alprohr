@@ -27,7 +27,7 @@
 <style>
 	#footer {
 		margin-bottom: 60px;
-		height: 60dvh;
+		min-height: 60dvh;
 	}
 
 	#footer > * {

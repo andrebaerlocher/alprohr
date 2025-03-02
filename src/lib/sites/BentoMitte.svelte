@@ -21,7 +21,7 @@
 
 <style>
 	#bentomitte {
-		height: 100dvh;
+		min-height: 100dvh;
 		grid-template-rows: 232px 1fr 344px;
 		grid-template-areas: 'b1 b1 b1 b2 b2 l b3 b3 b3 b3' 't t t t t l b3 b3 b3 b3' 't t t t t l bs bs bs bs';
 		gap: 24px;
