@@ -6,9 +6,20 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<svelte:window bind:innerWidth={responsive.winWidth} />
+<svelte:window
+	bind:innerHeight={responsive.winHeight}
+	bind:innerWidth={responsive.winWidth}
+	bind:scrollY={responsive.scrollPos}
+/>
 {@render children()}
 <Edelweiss />
+<div class="overlay">
+	{responsive.scrollPos} / {responsive.winWidth}
+</div>
 
 <style>
+	.overlay {
+		position: fixed;
+		top: 1rem;
+	}
 </style>

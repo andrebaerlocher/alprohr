@@ -1,21 +1,25 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Header from '$lib/organism/Header.svelte';
 </script>
 
-<div class="hero g10m">
-	<div id="top" class="after-lg">
-		<div id="links">
-			<div id="res">
+<div class="hero g10m" class:mobile={responsive.isMobile}>
+	<div id="top" class="after-lg" class:topMobile={responsive.isMobile}>
+		<div id="links" class:topMobile={responsive.isMobile}>
+			<div id="res" class:topMobile={responsive.isMobile}>
 				Reservationen: <a href="mailto:a.vankesteren@gmx.ch">a.vankesteren@gmx.ch</a>
 			</div>
-			<div id="tel">079 656 05 81</div>
+			<div id="tel" class:topMobile={responsive.isMobile}>079 656 05 81</div>
 		</div>
-		<div id="rechts">
-			<div id="rechtsoben">Öffnungszeiten: Mai - Oktober</div>
-			<div id="rechtsunten">Dienstag Ruhetag</div>
+		<div id="rechts" class:topMobile={responsive.isMobile}>
+			<div id="rechtsoben" class:topMobile={responsive.isMobile}>Öffnungszeiten: Mai - Oktober</div>
+			<div id="rechtsunten" class:topMobile={responsive.isMobile}>Dienstag Ruhetag</div>
 		</div>
 	</div>
-	<Header />
+	{#if !responsive.isMobile}
+		<Header />
+	{/if}
+
 	<h1>Herzlich Willkommen bi üs!</h1>
 	<h3 class="raleway">
 		Nicole und André heissen dich herzlich Willkommen in der Alp Rohr. Freu dich auf ein gemütliches
@@ -33,14 +37,10 @@
 		color: whitesmoke;
 	}
 
-	h1 {
-		font-size: clamp(3rem, 6vw, 90px);
-	}
-
 	h3 {
 		letter-spacing: 4%;
 		line-height: 1.2;
-		font-size: clamp(1rem, 2.35vw, 32px);
+		box-sizing: border-box;
 	}
 
 	#top {
@@ -88,5 +88,18 @@
 
 	#rechts > * {
 		text-align: right;
+	}
+
+	.topMobile {
+		display: grid;
+		grid-template-columns: 1fr;
+		max-width: 100dvw;
+		box-sizing: border-box;
+	}
+
+	.mobile > * {
+		padding: 0px;
+
+		max-width: calc(100dvw);
 	}
 </style>

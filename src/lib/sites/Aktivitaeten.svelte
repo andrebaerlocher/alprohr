@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
+	let { x }: { x: number } = $props();
 </script>
 
-<div class="g10">
+<div class="g10 cont" style:left="{-2 * x}dvw" class:cont={responsive.isMobile}>
 	<div
 		class="aktivcard g3"
 		style:background-image="linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('/images/Wandern.jpg')"
@@ -38,7 +40,28 @@
 	}
 
 	h2 {
-		font-size: 2rem;
 		align-self: end;
+	}
+
+	.mobile {
+		grid-template-columns: 1fr;
+		width: 100dvw;
+		padding: 0px;
+		justify-content: center;
+		grid-column: 1 / -1;
+	}
+
+	.mobile > * {
+		height: 100dvw;
+		width: 100%;
+		padding: 2rem;
+		box-sizing: border-box;
+
+		grid-column: 1 / -1;
+	}
+
+	.cont {
+		position: relative;
+		width: 300dvw;
 	}
 </style>

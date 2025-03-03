@@ -7,11 +7,12 @@
 	import SennwaldAlpRohr from '$lib/images/SennwaldAlpRohr.png';
 	import Sennwald from '$lib/images/Sennwald.png';
 	import Modal from '$lib/atoms/Modal.svelte';
+	import { responsive } from '$lib/aux/Responsive.svelte';
 
 	let showModal = $state<number>(-1);
 </script>
 
-<div id="wanderwege" class="g10">
+<div id="wanderwege" class="g10" class:mobile={responsive.isMobile}>
 	<h1 class="full">Wanderwege zum Alp Rohr</h1>
 	<h3 class="full raleway after-xl">
 		Entdecke die schönsten Wanderwege zur Alp Rohr und erlebe die unberührte Natur des Alpsteins. Ob
@@ -153,5 +154,10 @@
 		line-height: 1.2;
 		letter-spacing: 4%;
 		font-size: clamp(1rem, 2.1vw, 32px);
+	}
+
+	.mobile > * {
+		grid-column: 1 / -1;
+		width: 100dvw;
 	}
 </style>

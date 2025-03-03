@@ -75,11 +75,6 @@
 				overflow-x: clip;
 			}
 
-			h2 {
-			line-height: 1.44;
-			font-size: clamp(1.5rem, 3dvw, 5rem);
-			}
-
 			h1 {
 				font-family:
 					'Archivo',
@@ -95,12 +90,30 @@
 					'Helvetica Neue',
 					sans-serif;
 				font-weight: 600;
-				font-size: clamp(3rem, 6vw, 90px);
+				font-size: clamp(2rem, 6vw, 90px);
 				line-height: 1.2;
+			}
+
+			h2 {
+			line-height: 1.44;
+			font-size: clamp(1.4rem, 3dvw, 5rem);
 			}
 
 			h3 {
 			font-size: clamp(1rem, 2.35vw, 32px);
+			}
+
+			.text {
+			font-size: clamp(1rem, 2vw, 32px);
+			}
+
+			.mobile {
+			    display: none;
+				grid-template-columns: 1fr;
+				grid-column: 1 / -1;
+				padding: 1rem;
+				box-sizing: border-box;
+				margin-left: 0px;
 			}
 
 			.famid {

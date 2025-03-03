@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
 </script>
 
-<div id="huettenbild" class="wide">
+<div id="huettenbild" class="wide" class:huettenMobile={responsive.isMobile}>
 	<h1>Hüttenzauber & Genuss</h1>
 	<h2>mit Respekt für die Natur</h2>
 	<div class="empty"></div>
@@ -13,6 +14,11 @@
 		color: black;
 		display: grid;
 		grid-template-rows: 35dvh auto 1fr;
+	}
+
+	.huettenMobile {
+		box-sizing: border-box;
+		margin-left: 0px;
 	}
 
 	h1 {

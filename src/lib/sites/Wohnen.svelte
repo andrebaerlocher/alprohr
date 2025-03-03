@@ -1,12 +1,13 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Betten from '$lib/images/Betten.jpg';
 	import Crocs from '$lib/images/Crocs.jpg';
 	import Schlaf from '$lib/images/Schlaf.png';
 	import Signet from '$lib/images/Signet.png';
 </script>
 
-<div id="wohnen" class="g10m">
-	<div class="wohncard">
+<div id="wohnen" class="g10m" class:wohnMobile={responsive.isMobile}>
+	<div class="wohncard" class:cardMobile={responsive.isMobile}>
 		<h3>Für Gruppen und Einzelpersonen</h3>
 		<img src={Betten} alt="Bild" style:max-height="324px" />
 		<div class="text">
@@ -14,7 +15,7 @@
 			umfassen, können weitere Gäste mit in die Zimmer gebucht werden.
 		</div>
 	</div>
-	<div class="wohncard">
+	<div class="wohncard" class:cardMobile={responsive.isMobile}>
 		<h3>Hüttenschlafsäcke - Nachhaltig und praktisch</h3>
 		<img src={Schlaf} alt="Bild" />
 		<div class="text">
@@ -23,7 +24,7 @@
 			mieten.
 		</div>
 	</div>
-	<div class="wohncard">
+	<div class="wohncard" class:cardMobile={responsive.isMobile}>
 		<h3>Duschen und Hausschuhe</h3>
 		<img src={Crocs} alt="Bild" />
 		<div class="text">
@@ -38,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wohncard">
+	<div class="wohncard" class:cardMobile={responsive.isMobile}>
 		<h3>Preise pro Nacht</h3>
 		<img src={Signet} alt="Bild" style:opacity="80%" />
 		<ul>
@@ -55,6 +56,12 @@
 		flex-flow: column nowrap;
 	}
 
+	.wohnMobile {
+		grid-column: 1 / -1;
+
+		box-sizing: border-box;
+	}
+
 	.wohncard {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -64,16 +71,28 @@
 		margin-bottom: 24px;
 	}
 
+	.cardMobile {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'titel' 'bild' 'text';
+		column-gap: 0px;
+		padding: 2rem;
+		box-sizing: border-box;
+		width: 100dvw;
+		row-gap: 1rem;
+	}
+
 	h3 {
 		grid-area: titel;
+		margin-bottom: -20px;
 	}
 
 	.text {
-		grid-column: 2;
+		grid-area: text;
 	}
 
 	ul {
-		grid-column: 2;
+		grid-area: text;
 	}
 
 	img {
@@ -84,5 +103,12 @@
 		object-position: center;
 		margin-left: 60px;
 		margin-top: 30px;
+	}
+
+	.cardMobile > img {
+		margin-left: 0px;
+		max-width: calc(100dvw - 4rem);
+		box-sizing: border-box;
+		border-radius: 0.5rem;
 	}
 </style>
