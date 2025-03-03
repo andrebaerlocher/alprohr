@@ -13,13 +13,6 @@
 />
 {@render children()}
 <Edelweiss />
-<div class="overlay">
-	{responsive.scrollPos} / {responsive.winWidth}
-</div>
 
 <style>
-	.overlay {
-		position: fixed;
-		top: 1rem;
-	}
 </style>
