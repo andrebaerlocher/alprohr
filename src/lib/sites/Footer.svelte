@@ -17,7 +17,7 @@
 	</div>
 
 	<div id="frechts" class="g4">
-		<div>Nicole & André van Kesteren</div>
+		<div>Nicole & André Van Kesteren</div>
 		<div>Alte Landstrasse 83</div>
 		<div>9445 Rebstein, Schweiz</div>
 		<a href="mailto:a.vankesteren@gmx.ch">a.vankesteren@gmx.ch</a>
