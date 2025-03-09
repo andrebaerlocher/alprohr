@@ -37,27 +37,11 @@
 		grid-template-rows: 1fr 1fr;
 		padding: 1.5rem;
 		font-size: clamp(1rem, 2.9vh, 3rem);
+		margin-top: -1.5rem;
 	}
 
 	h2 {
 		align-self: end;
-	}
-
-	.mobile {
-		grid-template-columns: 1fr;
-		width: 100dvw;
-		padding: 0px;
-		justify-content: center;
-		grid-column: 1 / -1;
-	}
-
-	.mobile > * {
-		height: 100dvw;
-		width: 100%;
-		padding: 2rem;
-		box-sizing: border-box;
-
-		grid-column: 1 / -1;
 	}
 
 	.cont {

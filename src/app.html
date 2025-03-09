@@ -171,6 +171,13 @@
 				grid-column: 1/-1;
 			}
 
+			.fullg {
+			    grid-column: 1/-1;
+			             display: grid;
+			             grid-template-columns: repeat(12, 1fr);
+			             column-gap: 24px;
+			}
+
 			.g10 {
 				grid-column: 2 / 12;
 				display: grid;
@@ -180,6 +187,10 @@
 
 			.g10m {
 				grid-column: 2 / 12;
+			}
+
+			.g2 {
+				grid-column: span 2;
 			}
 
 			.g3 {

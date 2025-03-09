@@ -2,13 +2,13 @@
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Betten from '$lib/images/Betten.jpg';
 	import Crocs from '$lib/images/Crocs.jpg';
-	import Schlaf from '$lib/images/Schlaf.png';
+	import Schlafs from '$lib/images/Schlafs.jpg';
 	import Signet from '$lib/images/Signet.png';
 </script>
 
 <div id="wohnen" class="g10m" class:wohnMobile={responsive.isMobile}>
 	<div class="wohncard" class:cardMobile={responsive.isMobile}>
-		<h3>Für Gruppen und Einzelpersonen</h3>
+		<h3 class:h3isMobile={responsive.isMobile}>Für Gruppen und Einzelpersonen</h3>
 		<img src={Betten} alt="Bild" style:max-height="324px" />
 		<div class="text">
 			Unsere Zimmer werden gerne von Gruppen belegt. Sollte eine Gruppe weniger als 4 Personen
@@ -16,8 +16,8 @@
 		</div>
 	</div>
 	<div class="wohncard" class:cardMobile={responsive.isMobile}>
-		<h3>Hüttenschlafsäcke - Nachhaltig und praktisch</h3>
-		<img src={Schlaf} alt="Bild" />
+		<h3 class:h3isMobile={responsive.isMobile}>Hüttenschlafsäcke - Nachhaltig und praktisch</h3>
+		<img src={Schlafs} alt="Bild" />
 		<div class="text">
 			Aus Rücksicht auf unsere Ressourcen und die abgelegene Lage ist ein Hüttenschlafsack
 			obligatorisch. Falls Du keinen dabei hast, kannst Du bei uns einen Schlafsack für nur 5.00 Fr.
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class="wohncard" class:cardMobile={responsive.isMobile}>
-		<h3>Duschen und Hausschuhe</h3>
+		<h3 class:h3isMobile={responsive.isMobile}>Duschen und Hausschuhe</h3>
 		<img src={Crocs} alt="Bild" />
 		<div class="text">
 			<div class="text after-md">
@@ -40,13 +40,22 @@
 		</div>
 	</div>
 	<div class="wohncard" class:cardMobile={responsive.isMobile}>
-		<h3>Preise pro Nacht</h3>
-		<img src={Signet} alt="Bild" style:opacity="80%" />
-		<ul>
-			<li>Erwachsene ab 16 Jahren: 65.00 Fr.</li>
-			<li>Von 5 bis 15 Jahren: 35.00 Fr.</li>
-			<li>Kinder bis 5 Jahre: gratis</li>
-		</ul>
+		<h3 class:h3isMobile={responsive.isMobile}>Preise pro Nacht</h3>
+		<img class="sig" src={Signet} alt="Bild" style:opacity="80%" />
+		<div class="text">
+			<ul>
+				<li>Erwachsene ab 16 Jahren: 65.00 Fr.</li>
+				<li>Von 5 bis 15 Jahren: 35.00 Fr.</li>
+				<li>Kinder bis 5 Jahre: gratis</li>
+			</ul>
+			<span style:font-size="0.75rem">
+				Das Frühstück ist bereits im Übernachtungspreis inbegriffen.
+			</span>
+			<br />
+			<span style:font-size="1rem">
+				Weitere Informationen finden Sie in den <a href="/AGB.pdf">AGB</a>.
+			</span>
+		</div>
 	</div>
 </div>
 
@@ -54,6 +63,8 @@
 	#wohnen {
 		display: flex;
 		flex-flow: column nowrap;
+		gap: 36px;
+		margin-bottom: 24px;
 	}
 
 	.wohnMobile {
@@ -68,7 +79,6 @@
 		grid-template-rows: auto auto;
 		grid-template-areas: 'bild titel' 'bild text';
 		column-gap: 24px;
-		margin-bottom: 24px;
 	}
 
 	.cardMobile {
@@ -84,6 +94,10 @@
 
 	h3 {
 		grid-area: titel;
+		margin-top: 0px;
+	}
+
+	.h3isMobile {
 		margin-bottom: -20px;
 	}
 
@@ -97,12 +111,19 @@
 
 	img {
 		grid-area: bild;
-		width: 355px;
-		max-height: 355px;
+		width: 100%;
 		object-fit: cover;
 		object-position: center;
-		margin-left: 60px;
-		margin-top: 30px;
+		justify-self: center;
+		align-self: start;
+	}
+
+	.sig {
+		width: 75%;
+		object-fit: cover;
+		object-position: center;
+		justify-self: center;
+		align-self: start;
 	}
 
 	.cardMobile > img {

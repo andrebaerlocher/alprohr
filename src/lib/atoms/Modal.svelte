@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
+
 	let {
 		left = false,
 		text,
@@ -9,15 +11,22 @@
 </script>
 
 {#if visible}
-	<div transition:blur={{ duration: 300 }} class="modal" class:left>{text}</div>
+	<div
+		transition:blur={{ duration: 300 }}
+		class="modal"
+		class:modile={responsive.isMobile}
+		class:left
+	>
+		{text}
+	</div>
 {/if}
 
 <style>
 	.modal {
 		position: absolute;
-		width: 40dvw;
-		right: -35dvw;
-		backdrop-filter: blur(25px) brightness(1.2);
+		width: 35dvw;
+		top: 5dvh;
+		background-color: #fffffff0;
 		border-radius: 1rem;
 		border: 1px solid white;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -29,9 +38,12 @@
 		hyphens: auto;
 		display: grid;
 		place-items: center;
+		text-align: left;
 	}
 
-	.left {
-		left: -43dvw;
+	.modile {
+		left: 0dvw;
+		top: 0dvh;
+		width: 90dvw;
 	}
 </style>

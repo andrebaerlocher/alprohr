@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Edelweiss from '$lib/atoms/Edelweiss.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
+	import Sidebar from '$lib/organism/Sidebar.svelte';
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
@@ -13,6 +14,4 @@
 />
 {@render children()}
 <Edelweiss />
-
-<style>
-</style>
+<Sidebar />

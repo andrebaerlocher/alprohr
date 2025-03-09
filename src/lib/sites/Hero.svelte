@@ -4,16 +4,16 @@
 </script>
 
 <div class="hero g10m" class:mobile={responsive.isMobile}>
-	<div id="top" class="after-lg" class:topMobile={responsive.isMobile}>
-		<div id="links" class:topMobile={responsive.isMobile}>
-			<div id="res" class:topMobile={responsive.isMobile}>
+	<div id="top" class="after-lg">
+		<div id="links">
+			<div id="res">
 				Reservationen: <a href="mailto:a.vankesteren@gmx.ch">a.vankesteren@gmx.ch</a>
 			</div>
-			<div id="tel" class:topMobile={responsive.isMobile}>079 656 05 81</div>
+			<div id="tel">079 656 05 81</div>
 		</div>
-		<div id="rechts" class:topMobile={responsive.isMobile}>
-			<div id="rechtsoben" class:topMobile={responsive.isMobile}>Öffnungszeiten: Mai - Oktober</div>
-			<div id="rechtsunten" class:topMobile={responsive.isMobile}>Dienstag Ruhetag</div>
+		<div id="rechts">
+			<div id="rechtsoben">Öffnungszeiten: Mai - Oktober</div>
+			<div id="rechtsunten">Dienstag Ruhetag</div>
 		</div>
 	</div>
 	{#if !responsive.isMobile}
@@ -45,17 +45,21 @@
 
 	#top {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: space-between;
-		font-size: 24px;
-		height: 2rem;
+		align-items: center;
 		font-size: 1rem;
 		line-height: 1rem;
+		width: 100%;
+		gap: 1rem;
+		padding: 0.5rem 0;
 	}
 
 	#links {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
+		align-items: center;
+		gap: 0.5rem;
 	}
 
 	a {
@@ -67,39 +71,51 @@
 
 	#res {
 		border-right: 1px white solid;
-		padding: 0.25rem;
-		padding-right: 0.5rem;
-		padding-left: 0rem;
-		align-content: center;
+		padding: 0.25rem 0.5rem 0.25rem 0;
 	}
 
 	#tel {
-		padding: 0.25rem;
-		padding-left: 0.5rem;
-		align-content: center;
+		padding: 0.25rem 0 0.25rem 0.5rem;
 	}
 
 	#rechts {
-		padding-top: 0.5rem;
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 0.25rem;
-	}
-
-	#rechts > * {
 		text-align: right;
 	}
 
-	.topMobile {
-		display: grid;
-		grid-template-columns: 1fr;
-		max-width: 100dvw;
-		box-sizing: border-box;
+	.mobile #top {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.mobile #links {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.mobile #res {
+		border-right: none;
+		padding-right: 0;
+	}
+
+	.mobile #rechts {
+		width: 100%;
+		text-align: left;
 	}
 
 	.mobile > * {
 		padding: 0px;
-
 		max-width: calc(100dvw);
+	}
+
+	@media (max-width: 600px) {
+		#res,
+		#tel {
+			width: 100%;
+			padding: 0.25rem 0;
+			border-right: none;
+		}
 	}
 </style>

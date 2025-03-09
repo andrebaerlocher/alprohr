@@ -1,14 +1,11 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
 </script>
 
-<div id="bentomitte" class="g10">
+<div id="bentomitte" class="g10" class:bentmobile={responsive.isMobile}>
 	<img style:grid-area="b1" src="/images/BM1.jpg" alt="Bild" />
 	<img style:grid-area="b2" src="/images/BM2.jpg" alt="Bild" />
-	<img style:grid-area="b3" style:height="100%" src="/images/BM3.jpg" alt="Bild" />
-	<div class="zweibilder">
-		<img src="/images/BM4.jpg" alt="Bild" />
-		<img src="/images/BM5.jpg" alt="Bild" />
-	</div>
+
 	<div class="text links5">
 		Unser Bergrestaurant Alp Rohr ist ein beliebtes Ziel für Wanderer und Mountainbiker, die hier
 		eine wohlverdiente Pause einlegen. Ab der Alp startet das gut ausgeschilderte Wander-Wegenetz
@@ -16,6 +13,11 @@
 		Ausflugsziele in der Umgebung sind der Hohe Kasten oder die Alp Eidenen. Ein echtes Highlight
 		ist die Übernachtung in unseren Berggasthaus Alp Rohr – ein Erlebnis, das den Tag in den Bergen
 		unvergesslich macht.
+	</div>
+	<img style:grid-area="b3" style:height="100%" src="/images/BM3.jpg" alt="Bild" />
+	<div class="zweibilder">
+		<img src="/images/BM4.jpg" alt="Bild" />
+		<img src="/images/BM5.jpg" alt="Bild" />
 	</div>
 </div>
 
@@ -34,6 +36,7 @@
 		grid-area: t;
 		font-size: clamp(1rem, 1.95dvw, 3rem);
 		hyphens: auto;
+		align-self: center;
 	}
 
 	.zweibilder {
@@ -47,5 +50,12 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+	.bentmobile {
+		display: flex;
+		gap: 16px;
+		padding: 20px 0;
+		box-sizing: border-box;
+		flex-flow: column nowrap;
 	}
 </style>

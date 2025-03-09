@@ -10,8 +10,9 @@
 <style>
 	#erlebe {
 		display: grid;
-		align-content: end;
+		align-content: center;
 		padding-bottom: 60px;
+		padding-top: 120px;
 		box-sizing: border-box;
 	}
 </style>

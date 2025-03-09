@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { responsive } from '$lib/aux/Responsive.svelte';
 </script>
 
-<div id="kulinarisches" class="g10">
+<div id="kulinarisches" class="g10" class:bentmobile={responsive.isMobile}>
 	<div class="text g5">
 		Bei uns gibt es herzhafte, regionale und frische Köstlichkeiten wie hausgemachte Käsespätzli,
 		Wurstkäsesalat oder Schnitzel mit hausgemachten Pommes, kalte Plättli und Fitnessteller stehen
@@ -31,7 +32,7 @@
 			calc((100% - 120px) * 0.191);
 		box-sizing: border-box;
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 200px;
 	}
 
 	.text {
@@ -41,7 +42,7 @@
 		display: grid;
 		align-self: center;
 		hyphens: auto;
-		align-self: start;
+		align-self: center;
 		font-size: clamp(1rem, 1.95dvw, 3rem);
 	}
 
@@ -70,5 +71,12 @@
 
 	.span4 {
 		grid-column: span 4;
+	}
+	.bentmobile {
+		display: flex !important;
+		gap: 16px;
+		padding: 20px 0;
+		box-sizing: border-box;
+		flex-flow: column nowrap;
 	}
 </style>

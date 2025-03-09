@@ -117,18 +117,6 @@
 	</div>
 	<div
 		class="half"
-		style:background-image="linear-gradient(#4D4C4C66,#4D4C4C66),url('/images/Nachten.jpg')"
-	>
-		<Urige />
-	</div>
-	<div class="half">
-		<Erlebe />
-	</div>
-	<div class="plus">
-		<Wohnen />
-	</div>
-	<div
-		class="half"
 		bind:this={zwischenElement}
 		style:background-position="{getPosition(zwischenElement)}% center"
 		style:background-image="url('/images/Zwischen.jpg')"
@@ -146,6 +134,18 @@
 	</div>
 	<div
 		class="half"
+		style:background-image="linear-gradient(#4D4C4C66,#4D4C4C66),url('/images/Nachten.jpg')"
+	>
+		<Urige />
+	</div>
+	<div class="auto">
+		<Erlebe />
+	</div>
+	<div class="plus">
+		<Wohnen />
+	</div>
+	<div
+		class="half"
 		style:background-image="url('/images/Panorama.jpg');"
 		bind:this={sonnenBildElement}
 		style:background-position="{getPosition(sonnenBildElement)}% center"
@@ -155,19 +155,17 @@
 	</div>
 	<div
 		class="half"
+		class:alpmobile={responsive.isMobile}
 		bind:this={alpHornElement}
-		style:width="800px"
 		style:background-position="{getPosition(alpHornElement)}% center"
 		style:background-image="linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('/images/Alphorn.png');"
-	>
-		<Alphorn />
-	</div>
-	<div class="fullh">
+	></div>
+	<div class="half">
 		<Karte />
 	</div>
 	<div
 		class="auto"
-		style:background-image="url('/images/Footer.png');"
+		style:background-image="linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url('/images/Footer.png');"
 		style:background-position="center top"
 	>
 		<Footer />
@@ -182,10 +180,10 @@
 	.page > * {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		padding-left: clamp(1rem, 5dvw, 60px);
+		padding-right: clamp(1rem, 5dvw, 60px);
 		column-gap: 24px;
 		width: 100%;
-		padding-left: 60px;
-		padding-right: 60px;
 		box-sizing: border-box;
 		background-size: cover;
 		background-position: center;
@@ -206,5 +204,18 @@
 	.mobilePage > * {
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.alpmobile {
+		background-size: 800px;
+	}
+
+	.bar {
+		background-color: #6b6b6b20;
+		height: 100%;
+	}
+
+	.ex {
+		position: fixed;
 	}
 </style>

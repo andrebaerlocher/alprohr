@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Button from '$lib/atoms/Button.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Event from '$lib/images/Events.jpg';
 </script>
@@ -15,9 +16,38 @@
 		Lass dich vom Charme unserer Berghütte verzaubern und geniesse eine einzigartige Übernachtung
 		inmitten der beeindruckenden Natur. Wir freuen uns darauf, dich bei uns willkommen zu heissen!
 	</h3>
+	<div class="but">
+		<a href="/EVENT 2025.pdf">Unsere Events</a>
+	</div>
 </div>
 
 <style>
+	.but {
+		grid-column: 8 / -1;
+		display: grid;
+		place-items: center;
+		border-radius: 0.5rem;
+		background-color: lightblue;
+		height: 3rem;
+		border: 1px solid blue;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		transform: translateY(0);
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+	}
+
+	.but:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 1.5rem;
+	}
+
 	#event {
 		min-height: 100dvh;
 		grid-template-rows: auto auto auto 1fr;

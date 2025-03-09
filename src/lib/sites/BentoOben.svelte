@@ -1,12 +1,10 @@
-<div class="g10 bento">
+<script>
+	import { responsive } from '$lib/aux/Responsive.svelte';
+</script>
+
+<div class="g10 bento" class:bentmobile={responsive.isMobile}>
 	<img style:grid-area="b1" src="/images/BOOben.jpg" alt="Bild" />
 	<img style:grid-area="b2" src="/images/BO3.jpeg" alt="Bild" />
-	<img style:grid-area="b3" src="/images/BOTunnel.jpg" style:height="100%" alt="Bild" />
-
-	<div class="zweibilder">
-		<img src="/images/BOUntenlinks.jpg" alt="Bild" />
-		<img src="/images/BOUntenrechts.jpg" alt="Bild" />
-	</div>
 
 	<div class="text rechts5">
 		Die Alp Rohr ist bequem über eine Forststrasse erreichbar, die bis zum Parkplatz Schwendi mit
@@ -17,6 +15,12 @@
 		unvergesslicher Ausblick über das Rheintal – an der Schnittstelle von Schweiz, Liechtenstein und
 		dem österreichischen Vorarlberg.
 	</div>
+	<img style:grid-area="b3" src="/images/BOTunnel.jpg" style:height="100%" alt="Bild" />
+
+	<div class="zweibilder">
+		<img src="/images/BOUntenlinks.jpg" alt="Bild" />
+		<img src="/images/BOUntenrechts.jpg" alt="Bild" />
+	</div>
 </div>
 
 <style>
@@ -25,6 +29,9 @@
 		grid-area: t;
 		font-size: clamp(1rem, 1.95dvw, 3rem);
 		hyphens: auto;
+		align-self: center;
+		box-sizing: border-box;
+		max-height: 100%;
 	}
 
 	img {
@@ -40,6 +47,7 @@
 		padding-top: 60px;
 		padding-bottom: 60px;
 		box-sizing: border-box;
+		max-height: 100%;
 	}
 
 	.zweibilder {
@@ -47,5 +55,13 @@
 		grid-area: bs;
 		grid-template-columns: 184fr 270fr;
 		column-gap: 24px;
+	}
+
+	.bentmobile {
+		display: flex;
+		gap: 16px;
+		padding: 20px 0;
+		box-sizing: border-box;
+		flex-flow: column nowrap;
 	}
 </style>
