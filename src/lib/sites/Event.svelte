@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Button from '$lib/atoms/Button.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Event from '$lib/images/Events.jpg';
 </script>
@@ -23,7 +22,7 @@
 
 <style>
 	.but {
-		grid-column: 8 / -1;
+		grid-column: 7 / -1;
 		display: grid;
 		place-items: center;
 		border-radius: 0.5rem;
@@ -45,7 +44,7 @@
 	a {
 		text-decoration: none;
 		color: black;
-		font-size: 1.5rem;
+		font-size: clamp(1rem, 2.5dvw, 3rem);
 	}
 
 	#event {
