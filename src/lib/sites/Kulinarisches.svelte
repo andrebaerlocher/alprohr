@@ -5,7 +5,7 @@
 <div id="kulinarisches" class="g10" class:bentmobile={responsive.isMobile}>
 	<div class="text g5">
 		Bei uns gibt es herzhafte, regionale und frische Köstlichkeiten wie hausgemachte Käsespätzli,
-		Wurstkäsesalat oder Schnitzel mit hausgemachten Pommes, kalte Plättli und Fitnessteller stehen
+		Wurstkäsesalat oder Cordon Bleu mit hausgemachten Pommes, kalte Plättli und Fitnessteller stehen
 		zur Auswahl. Wir unterstützen ausschliesslich Produzenten und Lieferanten aus der Region
 		Rheintal und Kanton St. Gallen.
 		<br />

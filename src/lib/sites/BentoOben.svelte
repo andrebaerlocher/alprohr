@@ -4,7 +4,7 @@
 
 <div class="g10 bento" class:bentmobile={responsive.isMobile}>
 	<img style:grid-area="b1" src="/images/BOOben.jpg" alt="Bild" />
-	<img style:grid-area="b2" src="/images/BO3.jpeg" alt="Bild" />
+	<img style:grid-area="b2" src="/images/Innen.jpg" alt="Bild" />
 
 	<div class="text rechts5">
 		Die Alp Rohr ist bequem über eine Forststrasse erreichbar, die bis zum Parkplatz Schwendi mit
