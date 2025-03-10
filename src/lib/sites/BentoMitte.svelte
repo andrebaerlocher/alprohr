@@ -3,7 +3,7 @@
 </script>
 
 <div id="bentomitte" class="g10" class:bentmobile={responsive.isMobile}>
-	<img style:grid-area="b1" src="/images/BM1.jpg" alt="Bild" />
+	<img style:grid-area="b1" src="/images/BM11.png" alt="Bild" />
 	<img style:grid-area="b2" src="/images/BM2.jpg" alt="Bild" />
 
 	<div class="text links5">

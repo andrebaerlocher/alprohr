@@ -13,5 +13,14 @@
 	bind:scrollY={responsive.scrollPos}
 />
 {@render children()}
-<Edelweiss />
-<Sidebar />
+<!-- <Edelweiss />
+<div class="stick">
+	<Sidebar />
+</div>
+
+<style>
+	.stick {
+		position: absolute;
+		top: 50dvh;
+	}
+</style> -->

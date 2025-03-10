@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Aktivitaeten from '$lib/sites/Aktivitaeten.svelte';
 	import Alpbild from '$lib/sites/Alpbild.svelte';
-	import Alphorn from '$lib/sites/Alphorn.svelte';
 	import Aussicht from '$lib/sites/Aussicht.svelte';
 	import BentoMitte from '$lib/sites/BentoMitte.svelte';
 	import BentoOben from '$lib/sites/BentoOben.svelte';
@@ -176,6 +175,8 @@
 	.page {
 		display: flex;
 		flex-flow: column nowrap;
+		grid-row: 1 / -1;
+		grid-column: 1 / -1;
 	}
 	.page > * {
 		display: grid;
