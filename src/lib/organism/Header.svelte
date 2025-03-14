@@ -1,5 +1,13 @@
 <script lang="ts">
+	import { scrollTo } from '$lib/aux/Responsive.svelte';
 	import Logo from '$lib/images/Logo.png';
+
+	function handleClick(e: MouseEvent, id: string) {
+		e.preventDefault();
+		scrollTo(id);
+		// Update URL without triggering navigation
+		history.pushState(null, '', `/#${id}`);
+	}
 </script>
 
 <div
@@ -8,12 +16,16 @@
 	style:background-image="linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url('images/HeaderBG.jpg')"
 >
 	<a class="fheader borright" href="/">Startseite</a>
-	<a class="fheader" href="/kulinarisches">Kulinarisches</a>
+	<a class="fheader" href="/#kulinarisches" onclick={(e) => handleClick(e, 'kulinarisches')}
+		>Kulinarisches</a
+	>
 	<div class="logo">
 		<img src={Logo} alt="Logo von Alprohr" />
 	</div>
-	<a class="fheader borright" href="/uebernachten">Übernachten</a>
-	<a class="fheader" href="/kontakt">Kontakt</a>
+	<a class="fheader borright" href="/#uebernachten" onclick={(e) => handleClick(e, 'uebernachten')}
+		>Übernachten</a
+	>
+	<a class="fheader" href="/#kontakt" onclick={(e) => handleClick(e, 'kontakt')}>Kontakt</a>
 </div>
 
 <style>

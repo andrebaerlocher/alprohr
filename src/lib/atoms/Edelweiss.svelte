@@ -51,7 +51,7 @@
 	href="/EVENT 2025.pdf"
 	class="wrap"
 	class:visible={responsive.scrollPos > 800}
-	style="--scrollpos: calc({responsive.scrollPos}px + 30dvh)"
+	style="--scrollpos: calc(40dvh - {responsive.scrollPos - 800}px)"
 >
 	<svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 425.2 425.2">
 		<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -79,11 +79,10 @@
 		position: absolute;
 		width: 20dvw;
 		right: 0dvw;
-		top: 120dvh;
+		top: var(--scrollpos);
 		transform-origin: 100% 50%;
 		transform: scale(0.8);
 		transition:
-			top 0.1s ease-in-out,
 			transform 0.3s ease-in-out,
 			right 0.3s ease-in-out;
 		display: grid;
@@ -128,5 +127,6 @@
 		top: var(--scrollpos);
 		transform: scale(0.5);
 		right: -8dvw;
+		top: 40dvh;
 	}
 </style>

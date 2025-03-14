@@ -107,6 +107,7 @@
 	</div>
 	<div
 		class="auto noclip"
+		id="kulinarisches"
 		style:background-image="linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('/images/KulinarischesUnten.png')"
 		style:background-size="65%"
 		style:background-repeat="no-repeat"
@@ -140,7 +141,7 @@
 	<div class="auto">
 		<Erlebe />
 	</div>
-	<div class="plus">
+	<div class="plus" id="uebernachten">
 		<Wohnen />
 	</div>
 	<div
@@ -164,6 +165,7 @@
 	</div>
 	<div
 		class="auto"
+		id="kontakt"
 		style:background-image="linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url('/images/Footer.png');"
 		style:background-position="center top"
 	>

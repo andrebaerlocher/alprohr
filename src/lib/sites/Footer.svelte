@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Logo from '$lib/images/Logo.png';
+	import Datenschutz from '$lib/organism/Datenschutz.svelte';
+	import Impressum from '$lib/organism/Impressum.svelte';
+
+	let showDatenschutz = $state<boolean>(false);
+	let showImpressum = $state<boolean>(false);
 </script>
 
 <div id="footer" class="fullg" class:isMobile={responsive.isMobile}>
 	<div id="flinks" class="g3">
-		<a href="/datenschutz">Datenschutz</a>
-		<a href="/impressum">Impressum</a>
+		<button onclick={() => (showDatenschutz = true)}>Datenschutz</button>
+		<button onclick={() => (showImpressum = true)}>Impressum</button>
 		<a href="/AGB.pdf" style:margin-bottom="1rem">AGB</a>
 
 		<a href="/gutscheine">Gutscheine</a>
@@ -25,10 +30,18 @@
 	</div>
 </div>
 
+<Datenschutz bind:visible={showDatenschutz} />
+<Impressum bind:visible={showImpressum} />
+
 <style>
 	#footer {
 		margin-bottom: 60px;
 		min-height: 60dvh;
+	}
+
+	button {
+		all: unset;
+		cursor: pointer;
 	}
 
 	#footer > * {
