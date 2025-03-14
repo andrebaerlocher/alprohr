@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"vercel-build": "npm install zimmerframe && npx svelte-kit sync && vite build",
+		"vercel-build": "npm install zimmerframe@latest --no-save && npm link zimmerframe && npx svelte-kit sync && vite build",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
