@@ -79,4 +79,16 @@
 		box-sizing: border-box;
 		flex-flow: column nowrap;
 	}
+	@supports (-webkit-touch-callout: none) {
+		/* Safari-specific fixes */
+		#kulinarisches {
+			background-attachment: scroll;
+			will-change: transform;
+		}
+		
+		img {
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+	}
 </style>

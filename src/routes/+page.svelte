@@ -31,6 +31,12 @@
 	function getPosition(div: HTMLDivElement): number {
 		if (!div) return 50;
 		if (!responsive.isMobile) return 50;
+
+		// Return fixed position for Safari to avoid rendering issues
+		if (responsive.isSafari) {
+			return 50;
+		}
+
 		const divHeight = div.offsetHeight;
 		const divTop = div.offsetTop;
 		const minScroll = divTop - (responsive.winHeight - divHeight);
@@ -45,7 +51,7 @@
 <div
 	class="page"
 	style="--scrollPos: {responsive.scrollPos};"
-	class:mobilePage={responsive.isMobile}
+	class:mobilePage={responsive.isMobile || false}
 >
 	<!-- <div class="fullh ex">
 		{#each { length: 12 }, i}
@@ -190,6 +196,8 @@
 		box-sizing: border-box;
 		background-size: cover;
 		background-position: center;
+		transform: translateZ(0);
+		-webkit-background-size: cover;
 	}
 
 	.fullh {
