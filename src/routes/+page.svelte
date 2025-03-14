@@ -212,7 +212,7 @@
 	.alpmobile {
 		background-size: 800px;
 	}
-
+	/*
 	.bar {
 		background-color: #6b6b6b20;
 		height: 100%;
@@ -220,5 +220,5 @@
 
 	.ex {
 		position: fixed;
-	}
+	} */
 </style>
