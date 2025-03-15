@@ -46,7 +46,7 @@
 
 	#top {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
 		font-size: 1rem;
