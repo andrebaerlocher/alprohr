@@ -106,6 +106,15 @@
 		text-align: left;
 	}
 
+	.mobile {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column: 1 / -1;
+		padding: 1rem;
+		box-sizing: border-box;
+		margin-left: 0px;
+	}
+
 	.mobile > * {
 		padding: 0px;
 		max-width: calc(100dvw);
