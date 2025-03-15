@@ -35,6 +35,7 @@
 		gap: 1.5rem;
 		height: 100%;
 		color: whitesmoke;
+		box-sizing: border-box;
 	}
 
 	h3 {

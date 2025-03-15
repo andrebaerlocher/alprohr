@@ -45,17 +45,20 @@
 		height: 100dvh;
 		width: 100dvw;
 		overflow: clip;
+		box-sizing: border-box;
 	}
 
 	.main {
 		grid-column: 1 / -1;
 		overflow: auto;
 		grid-row: 1;
+		box-sizing: border-box;
 	}
 
 	.right {
 		grid-column: 3;
 		grid-row: 1;
-		overflow: hidden;
+		overflow: clip;
+		box-sizing: border-box;
 	}
 </style>
