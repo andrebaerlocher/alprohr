@@ -45,18 +45,21 @@
 		const nextEvent = futureEvents.length > 0 ? futureEvents[0] : events[0];
 		return nextEvent;
 	});
-
-	let mobileShow = $state<boolean>(false);
 </script>
 
-<div
+<button
 	class="wrap"
 	class:mobile={responsive.isMobile}
 	class:visible={responsive.scrollPos > 800}
-	class:mobileShow
 	style="--scrollpos: calc(40dvh - {responsive.scrollPos - 800}px)"
 >
-	<svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 425.2 425.2">
+	<svg
+		class:mobileSVG={responsive.isMobile}
+		id="Ebene_2"
+		xmlns="http://www.w3.org/2000/svg"
+		version="1.1"
+		viewBox="0 0 425.2 425.2"
+	>
 		<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
 		<defs>
 			<style>
@@ -71,7 +74,7 @@
 		/>
 	</svg>
 	<a
-		href="/edelweiss"
+		href="/EVENT 2025.pdf"
 		style="text-decoration: none; color: black;"
 		class:mobilep={responsive.isMobile}
 		style:font-weight="bold"
@@ -89,10 +92,11 @@
 	>
 		{currentEvent.dateString}
 	</a>
-</div>
+</button>
 
 <style>
 	.wrap {
+		all: unset;
 		text-decoration: none;
 		color: black;
 		position: absolute;
@@ -109,6 +113,7 @@
 		grid-template-columns: 1fr;
 		justify-items: center;
 		gap: 0px;
+		pointer-events: none;
 	}
 
 	.wrap > * {
@@ -119,6 +124,7 @@
 		text-align: center;
 		width: 10dvw;
 		margin: 0px;
+		pointer-events: auto;
 	}
 
 	svg {
@@ -132,6 +138,10 @@
 		transition: all 0.3s ease-in-out;
 	}
 
+	.mobileSVG {
+		opacity: 0.7;
+	}
+
 	svg:hover {
 		opacity: 90%;
 		filter: drop-shadow(0 0 14px rgba(0, 0, 0, 0.5));
@@ -139,10 +149,6 @@
 
 	.wrap:hover {
 		transform: scale(1);
-		right: 0;
-	}
-
-	.mobileShow {
 		right: 0;
 	}
 
@@ -158,7 +164,12 @@
 	}
 
 	.mobile.visible {
-		right: -120px;
+		top: 40dvh;
+	}
+
+	.mobile:hover {
+		transform: scale(0.5);
+		right: -8dvw;
 	}
 
 	.mobilep {
