@@ -113,7 +113,7 @@
 		grid-template-columns: 1fr;
 		justify-items: center;
 		gap: 0px;
-		pointer-events: none;
+		pointer-events: auto;
 	}
 
 	.wrap > * {
@@ -161,6 +161,7 @@
 
 	.mobile {
 		width: 300px;
+		pointer-events: none;
 	}
 
 	.mobile.visible {
