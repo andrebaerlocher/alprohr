@@ -19,9 +19,10 @@
 	#schonen {
 		padding-top: 60px;
 		padding-bottom: 60px;
+		overflow: clip;
 		box-sizing: border-box;
 		display: grid;
-		grid-template-rows: 349fr 319fr;
+		grid-template-rows: 1fr 44dvh;
 		gap: 24px;
 		grid-template-areas: 'b1 b1 b2 b2 l t t t t t' 'b3 b3 b3 b3 l t t t t t';
 	}
@@ -40,7 +41,8 @@
 		width: 100%;
 		object-fit: cover;
 		height: 100%;
-		overflow: clip;
+
+		position: relative;
 	}
 	.bentmobile {
 		display: flex !important;
