@@ -40,6 +40,7 @@
 		width: 100%;
 		object-fit: cover;
 		height: 100%;
+		overflow: clip;
 	}
 	.bentmobile {
 		display: flex !important;

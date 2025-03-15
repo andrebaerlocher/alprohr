@@ -4,7 +4,7 @@
 
 <div id="bentomitte" class="g10" class:bentmobile={responsive.isMobile}>
 	<img style:grid-area="b1" src="/images/BM11.png" alt="Bild" />
-	<img style:grid-area="b2" src="/images/BM2.jpg" alt="Bild" />
+	<img style:grid-area="b2" src="/images/BM2.jpg" alt="Bild" style:height="232px" />
 
 	<div class="text links5">
 		Unser Bergrestaurant Alp Rohr ist ein beliebtes Ziel für Wanderer und Mountainbiker, die hier
@@ -14,8 +14,8 @@
 		ist die Übernachtung in unseren Berggasthaus Alp Rohr – ein Erlebnis, das den Tag in den Bergen
 		unvergesslich macht.
 	</div>
-	<img style:grid-area="b3" style:height="100%" src="/images/BM3.jpg" alt="Bild" />
-	<div class="zweibilder">
+	<img style:grid-area="b3" src="/images/BM3.jpg" alt="Bild" style:height="232px" />
+	<div class="zweibilder" style:height="344px">
 		<img src="/images/BM4.jpg" alt="Bild" />
 		<img src="/images/BM5.jpg" alt="Bild" />
 	</div>
@@ -50,6 +50,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		overflow: clip;
 	}
 	.bentmobile {
 		display: flex;

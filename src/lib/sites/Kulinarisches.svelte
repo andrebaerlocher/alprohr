@@ -55,6 +55,7 @@
 		width: 100%;
 		object-fit: cover;
 		height: 100%;
+		overflow: clip;
 	}
 
 	.span1 {
@@ -85,7 +86,7 @@
 			background-attachment: scroll;
 			will-change: transform;
 		}
-		
+
 		img {
 			-webkit-transform: translateZ(0);
 			transform: translateZ(0);

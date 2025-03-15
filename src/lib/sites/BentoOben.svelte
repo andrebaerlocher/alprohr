@@ -3,8 +3,8 @@
 </script>
 
 <div class="g10 bento" class:bentmobile={responsive.isMobile}>
-	<img style:grid-area="b1" src="/images/BOOben.jpg" alt="Bild" />
-	<img style:grid-area="b2" src="/images/Innen.jpg" alt="Bild" />
+	<img class="grosslinks" src="/images/BOOben.jpg" alt="Bild" />
+	<img style:grid-area="b2" src="/images/Innen.jpg" alt="Bild" style:height="232px" />
 
 	<div class="text rechts5">
 		Die Alp Rohr ist bequem über eine Forststrasse erreichbar, die bis zum Parkplatz Schwendi mit
@@ -15,7 +15,7 @@
 		unvergesslicher Ausblick über das Rheintal – an der Schnittstelle von Schweiz, Liechtenstein und
 		dem österreichischen Vorarlberg.
 	</div>
-	<img style:grid-area="b3" src="/images/BOTunnel.jpg" style:height="100%" alt="Bild" />
+	<img style:grid-area="b3" src="/images/BOTunnel.jpg" alt="Bild" style:height="232px" />
 
 	<div class="zweibilder">
 		<img src="/images/BOUntenlinks.jpg" alt="Bild" />
@@ -36,8 +36,10 @@
 
 	img {
 		width: 100%;
-		object-fit: cover;
 		height: 100%;
+		object-fit: cover;
+
+		position: relative; /* creates a positioning context */
 	}
 
 	.bento {
@@ -48,6 +50,8 @@
 		padding-bottom: 60px;
 		box-sizing: border-box;
 		max-height: 100%;
+		width: 100%;
+		overflow: clip;
 	}
 
 	.zweibilder {
@@ -55,6 +59,14 @@
 		grid-area: bs;
 		grid-template-columns: 184fr 270fr;
 		column-gap: 24px;
+		width: 100%;
+		height: 344px;
+		overflow: clip;
+	}
+
+	.zweibilder > img {
+		width: 100%;
+		max-height: 100%; /* Add this */
 	}
 
 	.bentmobile {
@@ -63,5 +75,13 @@
 		padding: 20px 0;
 		box-sizing: border-box;
 		flex-flow: column nowrap;
+	}
+
+	.grosslinks {
+		grid-area: b1;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: relative;
 	}
 </style>
