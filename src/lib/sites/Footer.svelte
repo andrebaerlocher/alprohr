@@ -75,6 +75,10 @@
 		width: 100%;
 	}
 
+	.isMobile > #frechts {
+		align-items: start;
+	}
+
 	.mobilelogo {
 		justify-self: center;
 	}
