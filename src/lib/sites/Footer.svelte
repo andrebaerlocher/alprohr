@@ -78,6 +78,9 @@
 	.isMobile > #frechts {
 		align-items: start;
 	}
+	.isMobile > #flinks {
+		align-items: center;
+	}
 
 	.mobilelogo {
 		justify-self: center;
