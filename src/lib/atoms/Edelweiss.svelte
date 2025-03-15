@@ -99,7 +99,7 @@
 		all: unset;
 		text-decoration: none;
 		color: black;
-		position: absolute;
+		position: fixed;
 		width: 20dvw;
 		right: 0dvw;
 		top: var(--scrollpos);
@@ -114,6 +114,7 @@
 		justify-items: center;
 		gap: 0px;
 		pointer-events: auto;
+		max-width: 100%;
 	}
 
 	.wrap > * {

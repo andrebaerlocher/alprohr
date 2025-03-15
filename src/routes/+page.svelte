@@ -32,11 +32,6 @@
 		if (!div) return 50;
 		if (!responsive.isMobile) return 50;
 
-		// Return fixed position for Safari to avoid rendering issues
-		if (responsive.isSafari) {
-			return 50;
-		}
-
 		const divHeight = div.offsetHeight;
 		const divTop = div.offsetTop;
 		const minScroll = divTop - (responsive.winHeight - divHeight);
@@ -185,6 +180,7 @@
 		flex-flow: column nowrap;
 		grid-row: 1 / -1;
 		grid-column: 1 / -1;
+		overflow-x: clip;
 	}
 	.page > * {
 		display: grid;
@@ -198,14 +194,20 @@
 		background-position: center;
 		transform: translateZ(0);
 		-webkit-background-size: cover;
+		max-width: 100dvw;
+		position: relative;
 	}
 
 	.fullh {
+		min-height: 100vh;
 		min-height: 100dvh;
+		height: auto;
 	}
 
 	.half {
+		min-height: 50vh;
 		min-height: 50dvh;
+		height: auto;
 	}
 
 	.noclip {

@@ -19,9 +19,10 @@
 		Ausblicke und ein unvergleichliches Naturerlebnis. Die Alp Rohr ist nicht nur ein Ziel, sondern
 		auch ein Höhepunkt jeder Wanderung. Die Alp Rohr liegt genau auf halbem Weg zwischen dem
 		Rheintal und dem Hohen Kasten und eignet sich perfekt für eine kleine Rast.
+		{responsive.isSafari}
 	</h3>
 </div>
-<div class="cards g10m" class:notmobile={!responsive.isMobile}>
+<div class="cards g10m" class:safari={responsive.isSafari} class:notmobile={!responsive.isMobile}>
 	<Wandercard
 		left={false}
 		titel={'Brülisau AI - Hoher Kasten - Alp Rohr'}
@@ -84,5 +85,10 @@
 
 	.notmobile {
 		columns: 2;
+	}
+
+	.safari {
+		display: flex;
+		flex-flow: column nowrap;
 	}
 </style>
