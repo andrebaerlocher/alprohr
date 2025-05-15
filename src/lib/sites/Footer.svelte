@@ -13,8 +13,6 @@
 		<button onclick={() => (showDatenschutz = true)}>Datenschutz</button>
 		<button onclick={() => (showImpressum = true)}>Impressum</button>
 		<a href="/AGB.pdf" style:margin-bottom="1rem">AGB</a>
-
-		<a href="/gutscheine">Gutscheine</a>
 	</div>
 
 	<div id="fmitte" class="g5" class:mobilelogo={responsive.isMobile}>
