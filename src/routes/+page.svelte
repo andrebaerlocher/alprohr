@@ -18,6 +18,9 @@
 	import Zwischen from '$lib/sites/Zwischen.svelte';
 	import Erlebe from '$lib/sites/Erlebe.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
+	import Alert from '$lib/atoms/Alert.svelte';
+
+	const alert: string = `Liebe Gäste\n\nWegen Unfall bleibt die Alp Rohr ab 16. Juni \nMontag – Freitag geschlossen.\nSamstag & Sonntag geöffnet!\n\nDanke für euer Verständnis `;
 
 	let aussichtElement = $state<HTMLDivElement | null>(null);
 	let talblickElement = $state<HTMLDivElement | null>(null);
@@ -53,6 +56,9 @@
 			<div class="bar">{i}</div>
 		{/each}
 	</div> -->
+	{#if alert.length > 0}
+		<Alert text={alert} />
+	{/if}
 	<div
 		class="fullh"
 		style:background-image="linear-gradient(#6B6B6B4D, #6B6B6B4D), url('/images/VK Hero Image.jpg');"

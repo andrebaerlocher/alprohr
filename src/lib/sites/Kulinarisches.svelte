@@ -14,7 +14,7 @@
 		authentischen Alpenküche verwöhnen.
 	</div>
 	<div class="empty"></div>
-	<img class="span3" src="/images/Kul1.jpg" alt="" />
+	<img class="span3" src="/images/Kul1n.jpg" alt="" />
 	<img class="span1" src="/images/Kul2.jpg" alt="" />
 	<img class="span2" src="/images/Kul3.jpg" alt="" />
 	<img class="span2" src="/images/Kul4.jpg" alt="" />
