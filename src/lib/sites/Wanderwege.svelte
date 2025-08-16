@@ -2,7 +2,6 @@
 	import Brülisau from '$lib/images/BruelisauHoherKastenAlpRohr.png';
 	import BrülisauAlpRohr from '$lib/images/BruelisauAlpRohr.png';
 	import Saxerlücke from '$lib/images/BruelisauSaemtiserseeFaelenseeSaxerlueckeAlpRohr.png';
-	import Tagestour from '$lib/images/Tagestour.png';
 	import SennwaldBrülisau from '$lib/images/SennwaldBruelisau.png';
 	import SennwaldAlpRohr from '$lib/images/SennwaldAlpRohr.png';
 	import Sennwald from '$lib/images/Sennwald.png';
@@ -43,24 +42,18 @@
 	/>
 	<Wandercard
 		left={false}
-		titel={'Halbtages Rundtour Sennwald SG - Alp Rohr - Alp Eidenen - Sennwald'}
-		img={Tagestour}
-		text="Diese abwechslungsreiche Rundtour startet in Sennwald und führt dich zur Alp Rohr, wo eine gemütliche Rast mit herrlicher Aussicht wartet. Von dort geht es zur Alp Eidenen, durch idyllische Alpwiesen und Wälder. Der Abstieg zurück nach Sennwald rundet die Tour perfekt ab. Eine ideale Halbtageswanderung mit beeindruckenden Panoramen und alpinem Charme!"
-	/>
-	<Wandercard
-		left
 		titel={'Sennwald SG – Alp Rohr – Hoher Kasten – Brülisau AI'}
 		img={SennwaldBrülisau}
 		text="Starten Sie in Sennwald und wandern Sie hinauf zur Alp Rohr. Nach einer erholsamen Pause geht es weiter zum Hohen Kasten, wo Sie ein beeindruckendes Panorama erwartet. Der Abstieg führt über gut markierte Wege oder mit der Seilbahn hinunter nach Brülisau. Eine eindrucksvolle Tour, die alpinen Genuss und weite Ausblicke kombiniert!"
 	/>
 	<Wandercard
-		left={false}
+		left
 		titel={'Sennwald SG – Parkplatz Schwendi – Alp Rohr'}
 		img={Sennwald}
 		text="Fahren Sie von Sennwald zum Parkplatz Schwendi (begrenzte Parkmöglichkeiten). Von dort aus erreichen Sie die Alp Rohr nach einem etwa 1-stündigen Fussmarsch. Der Weg führt durch idyllische Natur und bietet wunderschöne Ausblicke – ideal für eine kurze, aber lohnende Wanderung!"
 	/>
 	<Wandercard
-		left
+		left={false}
 		titel={'Sennwald SG – Alp Rohr'}
 		img={SennwaldAlpRohr}
 		text="Starten Sie direkt im Dorf Sennwald und wandern Sie etwa 2 Stunden durch abwechslungsreiche Landschaften hinauf zur Alp Rohr. Der Weg führt durch Wälder und Wiesen, begleitet von herrlichen Ausblicken ins Rheintal – ein perfekter Einstieg in die Bergwelt!"
