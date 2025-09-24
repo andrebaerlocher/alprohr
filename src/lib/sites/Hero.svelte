@@ -12,8 +12,8 @@
 			<div id="tel">079 656 05 81</div>
 		</div>
 		<div id="rechts">
-			<div id="rechtsoben">Öffnungszeiten: Mai - Oktober</div>
-			<div id="rechtsunten">Dienstag Ruhetag</div>
+			<div id="rechtsoben">Öffnungszeiten: Oktober</div>
+			<div id="rechtsunten">Dienstag und Mittwoch Ruhetag</div>
 		</div>
 	</div>
 	{#if !responsive.isMobile}
