@@ -20,7 +20,7 @@
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Alert from '$lib/atoms/Alert.svelte';
 
-	const alert: string = `Liebe Gäste\n\nWegen Unfall bleibt die Alp Rohr \nMontag – Freitag geschlossen.\nAb Freitag, 26.06. wieder normal offen\n\nDanke für euer Verständnis `;
+	const alert: string = `Liebe Gäste\n\nDas Berggasthaus Alprohr ist im Winterschlaf! \nWir starten die Saison 2026 an den Aprilwochenenden.\n\nWir freuen uns auf euch und wünschen einen murmeligen Winter! `;
 
 	let aussichtElement = $state<HTMLDivElement | null>(null);
 	let talblickElement = $state<HTMLDivElement | null>(null);
@@ -56,8 +56,8 @@
 			<div class="bar">{i}</div>
 		{/each}
 	</div> -->
-	{#if alert.length > 0 && new Date() < new Date('2025-06-26')}
-		<Alert text={alert} />
+	{#if alert.length > 0 && new Date() < new Date('2026-04-01')}
+		<Alert color="lightblue" text={alert} />
 	{/if}
 	<div
 		class="fullh"
