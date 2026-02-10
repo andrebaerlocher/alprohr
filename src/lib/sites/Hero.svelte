@@ -11,10 +11,10 @@
 			</div>
 			<div id="tel">079 656 05 81</div>
 		</div>
-		<div id="rechts">
-			<div id="rechtsoben">Öffnungszeiten: Oktober</div>
-			<div id="rechtsunten">Dienstag und Mittwoch Ruhetag</div>
-		</div>
+		<a href="#zeiten" id="rechts">
+			<div id="rechtsoben">Öffnungszeiten im April:</div>
+			<div id="rechtsunten">An den Wochenenden</div>
+		</a>
 	</div>
 	{#if !responsive.isMobile}
 		<Header />

@@ -16,7 +16,7 @@
 		inmitten der beeindruckenden Natur. Wir freuen uns darauf, dich bei uns willkommen zu heissen!
 	</h3>
 	<div class="but">
-		<a href="/EVENT 2025.pdf">Unsere Events 2025</a>
+		<a href="/EVENT 2026.pdf">Unsere Events 2026</a>
 	</div>
 </div>
 

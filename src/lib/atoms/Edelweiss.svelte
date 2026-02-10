@@ -3,39 +3,64 @@
 
 	const events: { title: string; dateString: string; date: Date }[] = [
 		{
-			title: 'Antrinketen Alp Rohr',
-			dateString: '11. Mai',
-			date: new Date(2025, 4, 11)
+			title: 'Formation Huusfrauen Gruess',
+			dateString: '14. Mai',
+			date: new Date(2026, 4, 14)
 		},
 		{
-			title: 'Auffahrts Stubete',
-			dateString: '30./31. Mai',
-			date: new Date(2025, 4, 30)
+			title: 'Formation Fadegrad',
+			dateString: '24. Mai',
+			date: new Date(2026, 4, 24)
 		},
 		{
-			title: 'Pfingst Stubete',
-			dateString: '08. Juni',
-			date: new Date(2025, 5, 8)
+			title: 'Formation Hendermoos-Bueba',
+			dateString: '25. Mai',
+			date: new Date(2026, 4, 25)
 		},
 		{
-			title: 'Knusprige Vollmondnacht',
-			dateString: '11. Juni',
-			date: new Date(2025, 5, 11)
+			title: 'Familienmusik Holdi',
+			dateString: '14. Juni',
+			date: new Date(2026, 5, 14)
 		},
 		{
-			title: 'Knusprige Vollmondnacht',
-			dateString: '10. Juli',
-			date: new Date(2025, 6, 10)
+			title: 'Beer & Dine 6-Gang-Menü mit Bierbegleitung',
+			dateString: '19. Juni',
+			date: new Date(2026, 6, 19)
 		},
 		{
-			title: '1. Augustfeier',
+			title: 'Trio ÖÖB',
+			dateString: '5. Juli',
+			date: new Date(2026, 6, 5)
+		},
+		{
+			title: 'Formation Echo vo dä Schitterbiig',
+			dateString: '19. Juli',
+			date: new Date(2026, 6, 19)
+		},
+		{
+			title: '1.Augustfeier Grill-Büffet Musik',
 			dateString: '1. August',
-			date: new Date(2025, 7, 1)
+			date: new Date(2026, 7, 1)
 		},
 		{
-			title: 'Knusprige Vollmondnacht',
-			dateString: '7. September',
-			date: new Date(2025, 8, 7)
+			title: 'Wine & Dine 6-Gang-Menü mit Weinbegleitung',
+			dateString: '14. August',
+			date: new Date(2026, 7, 14)
+		},
+		{
+			title: '5liber Metzgete',
+			dateString: '24. bis 28. September',
+			date: new Date(2026, 8, 24)
+		},
+		{
+			title: 'Familienmusik Holdi',
+			dateString: '27. September',
+			date: new Date(2026, 8, 27)
+		},
+		{
+			title: 'Wildwochen',
+			dateString: '1. Oktober bis 1. November',
+			date: new Date(2026, 9, 1)
 		}
 	];
 
