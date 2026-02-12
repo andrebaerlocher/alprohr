@@ -21,7 +21,7 @@
 	import Alert from '$lib/atoms/Alert.svelte';
 	import Zeiten from '$lib/sites/Zeiten.svelte';
 
-	const alert: string = `Liebe Gäste\n\nDas Berggasthaus Alprohr ist im Winterschlaf! \nWir starten die Saison 2026 an den Aprilwochenenden.\n\nWir freuen uns auf euch und wünschen einen murmeligen Winter! `;
+	const alert: string = ''; //`Liebe Gäste\n\nDas Berggasthaus Alprohr ist im Winterschlaf! \nWir starten die Saison 2026 an den Aprilwochenenden.\n\nWir freuen uns auf euch und wünschen einen murmeligen Winter! `;
 
 	let aussichtElement = $state<HTMLDivElement | null>(null);
 	let talblickElement = $state<HTMLDivElement | null>(null);

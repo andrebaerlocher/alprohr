@@ -1,5 +1,7 @@
 <script lang="ts">
+	import Alert from '$lib/atoms/Alert.svelte';
 	import Edelweiss from '$lib/atoms/Edelweiss.svelte';
+	import Modal from '$lib/atoms/Modal.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
 
 	import type { Snippet } from 'svelte';
@@ -25,10 +27,16 @@
 			main?.removeEventListener('scroll', handleScroll);
 		};
 	});
+
+	let overlay = $state<string | null>(
+		'Liebe Gäste, die Seite ist aktuell im Umbau, sie sollte ab Freitag, dem 13. Februar 2026, wieder verfügbar sein. Wir hoffen, Freitag, der 13., bringt kein Unglück und freuen uns auf baldigen Besuch!'
+	);
 </script>
 
 <svelte:window bind:innerHeight={responsive.winHeight} bind:innerWidth={responsive.winWidth} />
-
+{#if overlay}
+	<Alert text={overlay} overlay />
+{/if}
 <div class="wrap">
 	<div class="main" bind:this={main}>
 		{@render children()}

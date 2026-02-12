@@ -5,14 +5,26 @@
 		left = false,
 		text,
 		visible = true,
-		color = 'red'
-	}: { left?: boolean; text: string; visible?: boolean; color?: string } = $props();
+		color = 'red',
+		overlay = false
+	}: {
+		left?: boolean;
+		text: string;
+		visible?: boolean;
+		color?: string;
+		overlay?: boolean;
+	} = $props();
 
 	import { blur } from 'svelte/transition';
+
+	function close() {
+		if (overlay) return;
+		visible = false;
+	}
 </script>
 
 {#if visible}
-	<button onclick={() => (visible = false)}>
+	<button onclick={() => close()}>
 		<div
 			transition:blur={{ duration: 300 }}
 			class="modal"
