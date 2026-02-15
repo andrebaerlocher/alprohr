@@ -28,9 +28,7 @@
 		};
 	});
 
-	let overlay = $state<string | null>(
-		'Liebe Gäste, die Seite ist aktuell im Umbau, sie sollte ab Freitag, dem 13. Februar 2026, wieder verfügbar sein. Wir hoffen, Freitag, der 13., bringt kein Unglück und freuen uns auf baldigen Besuch!'
-	);
+	let overlay = $state<string | null>(null);
 </script>
 
 <svelte:window bind:innerHeight={responsive.winHeight} bind:innerWidth={responsive.winWidth} />
