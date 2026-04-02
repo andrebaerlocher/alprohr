@@ -99,7 +99,7 @@
 		/>
 	</svg>
 	<a
-		href="/EVENT 2025.pdf"
+		href="/EVENT 2026.pdf"
 		style="text-decoration: none; color: black;"
 		class:mobilep={responsive.isMobile}
 		style:font-weight="bold"
@@ -109,7 +109,7 @@
 		{currentEvent.title}
 	</a>
 	<a
-		href="/EVENT 2025.pdf"
+		href="/EVENT 2026.pdf"
 		style="text-decoration: none; color: black;"
 		class:mobilep={responsive.isMobile}
 		style:grid-row="2"

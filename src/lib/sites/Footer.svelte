@@ -21,8 +21,8 @@
 
 	<div id="frechts" class="g4">
 		<div>Nicole & André Van Kesteren</div>
-		<div>Alte Landstrasse 83</div>
-		<div>9445 Rebstein, Schweiz</div>
+		<div>Rohrstrasse 3</div>
+		<div>9466 Sennwald, Schweiz</div>
 		<a href="mailto:a.vankesteren@gmx.ch">a.vankesteren@gmx.ch</a>
 		<div>079 656 05 81</div>
 	</div>

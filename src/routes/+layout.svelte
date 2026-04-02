@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Alert from '$lib/atoms/Alert.svelte';
 	import Edelweiss from '$lib/atoms/Edelweiss.svelte';
-	import Modal from '$lib/atoms/Modal.svelte';
 	import { responsive } from '$lib/aux/Responsive.svelte';
 
 	import type { Snippet } from 'svelte';
