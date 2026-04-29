@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { responsive } from '$lib/aux/Responsive.svelte';
 	import Header from '$lib/organism/Header.svelte';
+
+	const today = new Date();
 </script>
 
 <div class="hero g10m" class:mobile={responsive.isMobile}>
@@ -12,8 +14,14 @@
 			<div id="tel">079 656 05 81</div>
 		</div>
 		<a href="#zeiten" id="rechts">
-			<div id="rechtsoben">Öffnungszeiten im Mai:</div>
-			<div id="rechtsunten">Dienstag & Mittwoch Ruhetag</div>
+			<div id="rechtsoben">
+				Öffnungszeiten im {#if today.getMonth() === 3}
+					Mai{:else}Juni{/if}:
+			</div>
+			<div id="rechtsunten">
+				Dienstag {#if today.getMonth() === 3}
+					& Mittwoch{/if} Ruhetag
+			</div>
 		</a>
 	</div>
 	{#if !responsive.isMobile}
