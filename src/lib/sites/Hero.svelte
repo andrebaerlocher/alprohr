@@ -12,8 +12,8 @@
 			<div id="tel">079 656 05 81</div>
 		</div>
 		<a href="#zeiten" id="rechts">
-			<div id="rechtsoben">Öffnungszeiten im April:</div>
-			<div id="rechtsunten">An den Wochenenden</div>
+			<div id="rechtsoben">Öffnungszeiten im Mai:</div>
+			<div id="rechtsunten">Dienstag & Mittwoch Ruhetag</div>
 		</a>
 	</div>
 	{#if !responsive.isMobile}
