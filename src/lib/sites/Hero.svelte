@@ -15,7 +15,7 @@
 		</div>
 		<a href="#zeiten" id="rechts">
 			<div id="rechtsoben">
-				Öffnungszeiten im {#if today.getMonth() === 3}
+				Öffnungszeiten im {#if today.getMonth() <= 4}
 					Mai{:else}Juni{/if}:
 			</div>
 			<div id="rechtsunten">
