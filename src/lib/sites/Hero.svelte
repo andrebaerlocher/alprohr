@@ -19,7 +19,7 @@
 					Mai{:else}Juni{/if}:
 			</div>
 			<div id="rechtsunten">
-				Dienstag {#if today.getMonth() === 3}
+				Dienstag {#if today.getMonth() === 4}
 					& Mittwoch{/if} Ruhetag
 			</div>
 		</a>
