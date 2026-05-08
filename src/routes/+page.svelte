@@ -154,10 +154,17 @@
 	</div>
 	<div
 		class="half"
-		style:background-image="url('/images/Panorama.jpg');"
+		style:background-image="url('https://www.appenzellerlinks.ch/Appenzellerland/Alpstein-Panos/album/slides/Panorama%20Alp%20Rohr.jpg');"
 		bind:this={sonnenBildElement}
 		style:background-position="{getPosition(sonnenBildElement)}% center"
 	></div>
+	<div style="grid-column: 2/-2; display: flex; align-items: center; justify-content: center; ">
+		<span>
+			Freundlich bereitgestellt von Fredy Zirn - <a href="appenzellerlinks.ch"
+				>Appenzellerlinks.ch</a
+			>
+		</span>
+	</div>
 	<div class="plus">
 		<Wanderwege />
 	</div>
