@@ -160,7 +160,7 @@
 	></div>
 	<div style="grid-column: 2/-2; display: flex; align-items: center; justify-content: center; ">
 		<span>
-			Freundlich bereitgestellt von Fredy Zirn - <a href="appenzellerlinks.ch"
+			Freundlich bereitgestellt von Fredy Zirn - <a href="https://www.appenzellerlinks.ch"
 				>Appenzellerlinks.ch</a
 			>
 		</span>
